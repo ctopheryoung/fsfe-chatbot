@@ -27,7 +27,10 @@ const wss = new WebSocketServer({ server });
 wss.on("connection", (ws) => {
   ws.on("error", console.error);
 
-  ws.on("message", (data) => console.log(`Received: ${data}`));
+  ws.on("message", (data) => {
+    console.log(`Received message from client: ${data}`);
+    ws.send("Great!");
+  });
 
-  ws.send("something");
+  ws.send("Hello!");
 });
