@@ -1,7 +1,6 @@
 import path, { dirname } from "path";
 import express from "express";
 import { fileURLToPath } from "url";
-import { createServer } from "http";
 import { WebSocketServer } from "ws";
 
 const __filename = fileURLToPath(import.meta.url);
