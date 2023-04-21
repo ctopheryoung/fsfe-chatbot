@@ -12,7 +12,7 @@ input.addEventListener("keyup", (e) => {
 
 const wssUrl = ["localhost", "127.0.0.1", ""].includes(location.hostname)
   ? "ws://localhost:3001"
-  : "wss://api.chrisyoung.tech";
+  : "wss://api.chrisyoung.tech/chatbot";
 
 const ws = new WebSocket(wssUrl);
 
