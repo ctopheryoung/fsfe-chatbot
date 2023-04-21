@@ -11,7 +11,6 @@ const port = 3001;
 
 // Serve HTML
 app.get("/", (req, res) => {
-  console.log(__dirname);
   res.sendFile(path.join(__dirname, "ui/index.html"));
 });
 
