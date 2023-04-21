@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 });
 
 // Serve JS
-app.use("/js", express.static(path.join(__dirname), "ui/js"));
+app.use("/js", express.static(path.join(__dirname, "ui/js")));
 
 const server = app.listen(port, () => {
   console.log(`Chatbot app listening on port ${port}`);
