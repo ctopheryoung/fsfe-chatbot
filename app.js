@@ -1,17 +1,12 @@
-import path, { dirname } from "path";
 import express from "express";
-import { fileURLToPath } from "url";
 import { WebSocketServer } from "ws";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
 
 const app = express();
 const port = 3001;
 
 // Serve HTML
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "ui/index.html"));
+  res.sendFile("ui/index.html");
 });
 
 // Serve JS
