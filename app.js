@@ -10,9 +10,9 @@ const app = express();
 const port = 3001;
 
 // Serve HTML
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "ui/index.html"));
-});
+// app.get("/", (req, res) => {
+//   res.sendFile(path.join(__dirname, "ui/index.html"));
+// });
 
 // Serve JS
 app.use("/js", express.static("ui/js"));
